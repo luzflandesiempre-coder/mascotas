@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Tienda de Productos para Perros</title>
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Tienda de Productos para Perros</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#productos">Productos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="productos" class="mb-5">
+            <h2 class="text-center">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="https://picsum.photos/seed/ZZpQoiuBjG6GTd27EGgpQ/512" class="card-img-top" alt="Collar">
+                        <div class="card-body">
+                            <h5 class="card-title">Collar para Perro</h5>
+                            <p class="card-text">Collar ajustable y cómodo.</p>
+                            <button class="btn btn-primary agregar-carrito">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="https://picsum.photos/seed/GdA2EcxCLRnrWiZE_7oyY/512" class="card-img-top" alt="Comida">
+                        <div class="card-body">
+                            <h5 class="card-title">Comida para Perros</h5>
+                            <p class="card-text">Comida nutritiva y deliciosa.</p>
+                            <button class="btn btn-primary agregar-carrito">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="card">
+                        <img src="https://picsum.photos/seed/ZtzPIkmHYgYrY_Y1MxymW/512" class="card-img-top" alt="Juguete">
+                        <div class="card-body">
+                            <h5 class="card-title">Juguete Para Perros</h5>
+                            <p class="card-text">Juguete resistente y divertido.</p>
+                            <button class="btn btn-primary agregar-carrito">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center">Contacto</h2>
+            <form id="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </section>
+
+        <div id="carrito" class="mb-5">
+            <h2 class="text-center">Carrito</h2>
+            <ul class="list-group" id="lista-carrito"></ul>
+            <p id="total" class="text-right mt-3">Total: $0</p>
+        </div>
+    </main>
+
+    <footer class="bg-primary text-white text-center py-4">
+        <p>&copy; 2023 Tienda de Productos para Perros</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
